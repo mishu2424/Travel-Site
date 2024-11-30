@@ -97,7 +97,7 @@ header{
 /* main section styles */
 main section{
     width: 70vw;
-    margin: 5% auto;
+    margin: 10% auto 5% auto;
 }
 
 /* popular tour section styles */
@@ -142,6 +142,7 @@ main section{
     grid-template-rows: auto;
     gap: 5%;
     align-items: center;
+    margin-top: 5%;
 }
 .perfectplace-details h2{
     font-weight: bolder;
@@ -161,8 +162,69 @@ main section{
     border-top-right-radius: 10px;
 }
 
-
-
+/* newsletter section styles */
+.newsletter{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 20em;
+    gap: 3%;
+}
+.newsletter-details{
+    border: 1px solid #FF5400;
+    border-radius: 10px;
+    padding: 5%;
+}
+.newsletter-details p{
+    font-size: 16px;
+    color: #5A5A5D;
+}
+.newsletter-details form{
+    border-top: 1px solid rgb(198, 194, 194);
+}
+.newsletter-details form input, button{
+    display: block;
+    width: 100%;
+    padding: 3% 0px;
+    margin: 2% 0px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(214, 214, 214);
+}
+.newsletter-details form input::placeholder{
+    padding: 4%;
+}
+.newsletter-details form button{
+    margin-top: 2%;
+}
+.newsletter-img{
+    position: relative;
+}
+.newsletter-img img{
+    width: 100%;
+    height: 100%;
+}
+.discount{
+    background-color: #FF5400;
+    color: white;
+    padding: 2%;
+    position: absolute;
+    bottom: 20%;
+    right:1%;
+    transform: rotate(-30deg);
+    width: auto;
+    height: 4em;
+    text-align: center;
+    border-radius: 10px;
+}
+.discount-title{
+    font-size: 24px;
+    font-weight: 200;
+    margin: 0px;
+}
+.discount-title2{
+    font-size: 32px;
+    margin: 0px;
+}
 
 
 
@@ -248,11 +310,35 @@ main section{
         position: relative;
         left: 0%;
     }
+
     /* perfect place section styles */
     .perfect-place{
         grid-template-columns: repeat(1,1fr);
     }
     .perfectplace-details h2{
         font-size: 1.5em;
+    }
+
+    /* newsletter section styles */
+    .newsletter{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .newsletter-details p{
+        font-size: 0.8em;
+    }
+    .newsletter-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .discount{
+        bottom: 15%;
+        right: 2%;
+    }
+    .discount-title{
+        font-size: 15px;
+    }
+    .discount-title2{
+        font-size: 23px;
     }
 }
