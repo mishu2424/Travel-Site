@@ -62,6 +62,9 @@ header{
     font-weight: bolder;
     margin: 2% 0px;
 }
+.banner-details{
+    font-size: 16px;
+}
 .banner-form{
     display: grid;
     grid-template-columns: repeat(4,25%);
@@ -90,6 +93,73 @@ header{
 .search-icon{
     padding-right: 0.3em;
 }
+
+/* main section styles */
+main section{
+    width: 70vw;
+    margin: 5% auto;
+}
+
+/* popular tour section styles */
+.popular-tours{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 35em;
+}
+.populartour-description{
+    color: #5A5A5D;
+    font-size: 16px;
+    padding-top: 1%;
+}
+.populartour-title{
+    margin: 1% 0px;
+}
+.populartour-description p{
+    padding: 1% 0px;
+}
+.populartour-description ul li{
+    padding: 1% 0px;
+}
+.btn-primary{
+    background-color: #FF5400;
+    color: white;
+    padding: 2% 4%;
+    border-style: none;
+    border-radius: 5px;
+}
+.populartour-img img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive section */
@@ -134,5 +204,26 @@ header{
     }
     .banner-form button{
         padding: 4%; 
+    }
+    /* main section styles */
+    main section{
+        width: 90%;
+        margin: 5% auto;
+    }
+    
+    /* popular tour section styles */
+    .popular-tours{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 5%;
+    }
+    .populartour-description{
+        font-size: 0.8em;
+    }
+    .populartour-img img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 0%;
     }
 }
