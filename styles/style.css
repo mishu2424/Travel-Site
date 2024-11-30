@@ -40,7 +40,11 @@ header{
     text-decoration: none;
     color: #424247;
 } 
-
+/* Hamburger icon styles */
+.hamburger-icon {
+    display: none; /* Hide the hamburger icon by default */
+    cursor: pointer;
+}
 /* banner section styles */
 .banner{
     width: 70vw;
@@ -427,16 +431,29 @@ footer{
 
 /* mobile devices */
 @media screen and (max-width:576px) {
+
     .nav{
         width: 90%;
-        flex-direction: column;
     }
     .nav-logo img{
         width: 24px;
     }
-    .nav-links > ul{
-        gap: 0.5em;
+    .nav-links {
+        display: none;
     }
+    /* .nav-links > ul{
+        gap: 0.5em;
+    } */
+    .hamburger-icon {
+        display: block; /* Show hamburger icon on small screens */
+    }
+
+    /* Style the hamburger icon */
+    .hamburger-icon i {
+        font-size: 20px;
+        color: #FF5400; /* Color for the hamburger icon */
+    }
+
     
     /* banner section styles */
     .banner{
