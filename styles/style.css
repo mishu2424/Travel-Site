@@ -135,6 +135,96 @@ main section{
 }
 
 
+/* Collage section styles */
+.image-collage{
+    margin-top: 5%;
+}
+.collage-details{
+    text-align: center;
+}
+.collage-info{
+    font-size: 16px;
+    color: #5A5A5D;
+}
+.collage-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 250px;
+    gap:10px;
+}
+.child-row{
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+}
+.firstimg{
+    background-image: url('../Images/Rectangle\ 5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondimg{
+    background-image: url('../Images/Rectangle\ 8.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second-row{
+    display: grid;
+    grid-template-columns: 300px 550px auto;
+}
+.thirdimg{
+    background-image: url('../Images/Rectangle\ 6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.fourthimg{
+    background-image: url('../Images/Rectangle\ 7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.fifthimg{
+    background-image: url('../Images/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.thirdrow{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 10px;
+}
+.sixthimg{
+    background-image: url('../Images/Rectangle\ 11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.seventhimg{
+    background-image: url('../Images/Rectangle\ 10.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+
+
+
 /* service section styles */
 .services{
     margin-top: 5%;
@@ -381,6 +471,32 @@ main section{
         left: 0%;
     }
 
+    /* Collage section styles */
+    .image-collage{
+        margin-top: 5%;
+    }
+    .collage-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px;
+    }
+    .collage-info{
+        font-size: 0.8em;
+    }
+    .row{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 250px;
+    }
+    .child-row{
+        margin-bottom: 2%;
+    }
+    .second-row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .thirdrow{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 10px;
+    }
 
     /* service section styles */
     .service-cards{
