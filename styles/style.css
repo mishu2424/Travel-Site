@@ -135,6 +135,65 @@ main section{
 }
 
 
+/* service section styles */
+.services{
+    margin-top: 5%;
+}
+.service-details{
+    text-align: center;
+}
+.service-info{
+    color: #5A5A5D;
+}
+.service-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    margin-top: 3%;
+}
+.card1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+    gap:10px;
+}
+.child-card{                   
+    border-radius: 10px;
+    padding: 3%; 
+}
+.child-card1{
+    border: 2px solid #f9f0e3; 
+    background-color: #fffdfa;
+}
+.child-card img{
+    width: 20%;
+}
+.child-card p{
+    font-size: 16px;
+    color: #5A5A5D;
+}
+.child-card2{
+    border: 2px solid #c9f3ff; 
+    background-color: #dbe6e9;
+}
+.card2{
+    border: 2px solid #f7d4d4;
+    background-color: #fff7f7;
+    width: 500px;
+    height: 266px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 3%;
+}
+.card2 img{
+    width: 20%;
+}
+.card2 p{
+    font-size: 16px;
+    color: #5A5A5D;
+}
+
 /* perfect place section styles */
 .perfect-place{
     display: grid;
@@ -149,6 +208,9 @@ main section{
     font-size: 2.5em;
     margin: 0px;
 }
+.perfectplace-details p{
+    color: #5A5A5D;
+}
 .perfectplace-details p,button{
     padding-top: 1%;
 }
@@ -161,6 +223,13 @@ main section{
     border-radius: 10px;
     border-top-right-radius: 10px;
 }
+
+
+
+
+
+
+
 
 /* newsletter section styles */
 .newsletter{
@@ -300,6 +369,7 @@ main section{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: auto;
         gap: 5%;
+        margin-bottom: 25%;
     }
     .populartour-description{
         font-size: 0.8em;
@@ -309,6 +379,32 @@ main section{
         height: 100%;
         position: relative;
         left: 0%;
+    }
+
+
+    /* service section styles */
+    .service-cards{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 3%;
+    }
+    .card1{
+        grid-template-columns: repeat(1, 1fr);
+        gap:10px;
+    }
+    .child-card{       
+        width: 95%;
+        height: 15em;
+    }
+    .child-card p{
+        font-size: 0.8em;
+    }
+    .card2{
+        width: 95%;
+        height: 15em;
+    }
+    .card2 p{
+        font-size: 0.8em;
     }
 
     /* perfect place section styles */
