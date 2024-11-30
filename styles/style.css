@@ -386,12 +386,29 @@ main section{
 }
 
 
-
-
-
-
-
-
+/* footer section styles */
+footer{
+    background-color: #eaeaea;
+}
+.footer{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3% 0px;
+}
+.footer .nav-logo{
+    justify-content: center;
+}
+.footer .nav-logo h2{
+    margin: 2px 0px;
+}
+.footer-info{
+    margin: 0px;
+    color: #5A5A5D;
+}
+.icons i{
+    padding: 1%;
+}
 
 
 
@@ -495,6 +512,7 @@ main section{
     }
     .thirdrow{
         grid-template-columns: repeat(1,1fr);
+        gap:20px;
         margin-top: 10px;
     }
 
@@ -553,4 +571,28 @@ main section{
     .discount-title2{
         font-size: 23px;
     }
+    /* footer section styles */
+    footer{
+        background-color: #eaeaea;
+    }
+    .footer{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 3% 0px;
+    }
+    .footer .nav-logo{
+        justify-content: center;
+    }
+    .footer .nav-logo h2{
+        margin: 2px 0px;
+    }
+    .footer-info{
+        margin: 0px;
+        color: #5A5A5D;
+    }
+    .icons i{
+        padding: 1%;
+    }
+
 }
