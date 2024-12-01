@@ -130,6 +130,7 @@ main section{
     padding: 2% 4%;
     border-style: none;
     border-radius: 5px;
+    width: 30%;
 }
 .populartour-img img{
     width: 80%;
@@ -237,6 +238,7 @@ main section{
     text-align: center;
 }
 .service-info{
+    font-size: 16px;
     color: #5A5A5D;
 }
 .service-cards{
@@ -288,6 +290,87 @@ main section{
     color: #5A5A5D;
 }
 
+/* deals and discount section styles */
+.deals-discount{
+    height: auto;
+    margin-top: 5%;
+}
+.deals-details{
+    text-align: center;
+}
+.deals-info{
+    font-size: 16px;
+    color: #5A5A5D;
+}
+.deals-container{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(3,auto);
+    gap:10px;
+}
+.deals-container .firstrow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-image: url('../Images/Group\ 39.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.deals-container .secondrow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-image: url('../Images/Group\ 40.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.deals-container .thirdrow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-image: url('../Images/Group\ 39.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0px;
+}
+.deals-container .child-container{
+    border-radius: 10px;
+    width:50%;
+    height: 75%;
+    margin: 2%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2%;
+}
+.child-container i{
+    color: #FF5400;
+}
+.child-container small{
+    padding: 0px 0.8em;
+    color: #5A5A5D;
+}
+.deals-info{
+    font-size: 16px;
+    color: #5A5A5D;
+}
+.deals-card-description{
+    font-size: 16px;
+    color: #5A5A5D;
+}
+.price{
+    color: #FF5400;
+    font-weight: bold;
+}
+.btn-primary2{
+    width: 20%;
+}
+.btn-primary3{
+    margin: 2% auto;
+    width: 20%;
+    padding: 1% 0px;
+}
 /* perfect place section styles */
 .perfect-place{
     display: grid;
@@ -331,6 +414,7 @@ main section{
     grid-template-columns: 1.5fr 2fr;
     grid-template-rows: 20em;
     gap: 3%;
+    margin-top: 5%;
 }
 .newsletter-details{
     border: 1px solid #FF5400;
@@ -557,7 +641,44 @@ footer{
     .card2 p{
         font-size: 0.8em;
     }
-
+    /* deals and discount section styles */
+    .deals-info{
+        font-size:0.8em;
+    }
+    .deals-container{
+        grid-template-rows: repeat(3,400px);
+    }
+    .deals-container .firstrow{
+        justify-content: center;
+    }
+    .deals-container .secondrow{
+        justify-content: center;
+    }
+    .deals-container .thirdrow{
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .deals-container .child-container{
+        width:80%;
+        height: 70%;
+        padding: 4%;
+    }
+    .child-container small{
+        padding: 0px 0.6em;
+    }
+    .deals-info{
+        font-size: 0.8em;
+    }
+    .deals-card-description{
+        font-size: 0.8em;
+    }
+    .btn-primary2{
+        width: 30%;
+    }
+    .btn-primary3{
+        width: 30%;
+        padding: 2% 0px;
+    }
     /* perfect place section styles */
     .perfect-place{
         grid-template-columns: repeat(1,1fr);
