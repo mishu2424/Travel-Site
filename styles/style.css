@@ -156,11 +156,14 @@ main section{
     grid-template-columns: 1fr;
     grid-template-rows: 250px;
 }
-.row{
+.row,.firstrow{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 250px;
     gap:10px;
+}
+.firstrow{
+    gap: 10px;
 }
 .child-row{
     margin-bottom: 2%;
@@ -595,14 +598,19 @@ footer{
     }
     .collage-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 250px;
+        grid-template-rows: repeat(7,auto);
     }
     .collage-info{
         font-size: 0.8em;
     }
-    .row{
+    /* .row{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: 250px;
+    } */
+    .firstrow{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,250px);
+        margin-bottom: 2%;
     }
     .child-row{
         margin-bottom: 2%;
@@ -676,8 +684,8 @@ footer{
         width: 30%;
     }
     .btn-primary3{
-        width: 30%;
-        padding: 2% 0px;
+        width: 40%;
+        padding: 2%;
     }
     /* perfect place section styles */
     .perfect-place{
@@ -700,8 +708,8 @@ footer{
         height: 100%;
     }
     .discount{
-        bottom: 15%;
-        right: 2%;
+        bottom: 20%;
+        right: 3%;
     }
     .discount-title{
         font-size: 15px;
